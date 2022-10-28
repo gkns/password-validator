@@ -1,4 +1,4 @@
-package org.example.pwdvalidator.interfaces;
+package org.gopi.pwdvalidator.interfaces;
 
 /**
  * This interface defines the rule behaviors.
@@ -9,5 +9,5 @@ public interface Rule {
      * @return boolean
      * @throws Exception
      */
-    boolean apply();
+    boolean apply(char[] password);
 }
