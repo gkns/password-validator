@@ -1,7 +1,7 @@
 package org.gopi.pwdvalidator.interfaces;
 
 /**
- * This interface defines the 'checked' rule behaviors.
+ * This interface defines the 'checked' @link Rule behaviors.
  */
 public interface CheckedRule {
     /**

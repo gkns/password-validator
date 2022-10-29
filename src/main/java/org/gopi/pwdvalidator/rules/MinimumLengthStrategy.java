@@ -3,14 +3,16 @@ package org.gopi.pwdvalidator.rules;
 import org.gopi.pwdvalidator.interfaces.EnforcedRule;
 import org.gopi.pwdvalidator.interfaces.Rule;
 
-public class MinimumLength implements Rule, EnforcedRule {
-    public static final int MINIMUM_LENGTH = 8;
+public class MinimumLengthStrategy implements Rule, EnforcedRule {
+    // Ideally, this should be configurable and injected from a config file.
+
+    public static final int PWD_MINIMUM_LENGTH = 8;
 
     @Override
     public void enforce(char[] password) {
-        if (password.length < MINIMUM_LENGTH) {
+        if (password.length < PWD_MINIMUM_LENGTH) {
             throw new IllegalArgumentException("Password must be at least "
-                    + MINIMUM_LENGTH + " characters long.");
+                    + PWD_MINIMUM_LENGTH + " characters long.");
         }
     }
 

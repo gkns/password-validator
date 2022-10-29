@@ -1,7 +1,7 @@
 package org.gopi.pwdvalidator.interfaces;
 
 /**
- * This interface defines the 'enforced' rule behaviors.
+ * This interface defines the 'enforced' @link Rule behaviors.
  */
 public interface EnforcedRule {
     /**
