@@ -6,6 +6,7 @@ import org.gopi.pwdvalidator.interfaces.Rule;
 public class NumericCharacterStrategy implements Rule, CheckedRule {
     // Ideally, this should be configurable and injected from a config file.
     public static final int MIN_NUMERIC_CHARACTERS = 1;
+
     @Override
     public boolean apply(char[] password) {
         int count = 0;

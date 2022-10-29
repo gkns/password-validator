@@ -6,6 +6,7 @@ import org.gopi.pwdvalidator.interfaces.Rule;
 public class LowerCaseLetterStrategy implements Rule, CheckedRule {
     // Ideally, this should be configurable and injected from a config file.
     public static int MIN_LOWER_CASE_CHARACTERS = 1;
+
     @Override
     public boolean apply(char[] password) {
         int count = 0;

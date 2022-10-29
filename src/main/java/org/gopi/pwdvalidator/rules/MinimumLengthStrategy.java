@@ -10,7 +10,7 @@ public class MinimumLengthStrategy implements Rule, EnforcedRule {
 
     @Override
     public void enforce(char[] password) {
-        if (password.length < PWD_MINIMUM_LENGTH) {
+        if (password != null && password.length < PWD_MINIMUM_LENGTH) {
             throw new IllegalArgumentException("Password must be at least "
                     + PWD_MINIMUM_LENGTH + " characters long.");
         }
