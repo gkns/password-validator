@@ -16,6 +16,9 @@
                 <configuration>
                     <release>${java.version}</release>
                     <enablePreview>true</enablePreview>
+                    <source>17</source>
+                    <target>17</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
             <plugin>
