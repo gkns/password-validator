@@ -13,7 +13,6 @@ public class PasswordRulesTest {
     static Rule upperCaseLetterStrategy;
     static Rule lowerCaseLetterStrategy;
     static Rule numericCharacterStrategy;
-    Rule specialCharacterStrategy;
     static Rule minimumLengthStrategy;
 
     @BeforeAll
